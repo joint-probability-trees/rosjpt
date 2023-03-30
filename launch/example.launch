@@ -1,0 +1,8 @@
+<launch>
+  <group ns="example_plan">
+    <group ns="jpt">
+      <param name="path" value="$((env HOME)/Documents/example.jpt" type="string"/>
+      <node name="examplejpt" pkg="rosjpt" type="reasoner.py" output="screen"/>
+    </group>
+  </group>
+</launch>

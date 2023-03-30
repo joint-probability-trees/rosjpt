@@ -1,0 +1,8 @@
+<launch>
+  <group ns="unittest">
+    <group ns="jpt">
+      <param name="path" value="$(find rosjpt)/test/minimal_test.jpt" type="string"/>
+      <node name="minimaljpt" pkg="rosjpt" type="reasoner.py" output="screen"/>
+    </group>
+  </group>
+</launch>
